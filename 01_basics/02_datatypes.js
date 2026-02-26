@@ -31,3 +31,39 @@ let state;
 console.log(typeof null);
 console.log(typeof undefined);
 
+// summary***********************************
+
+
+// Primitive
+
+// 7 types : string, number, boolean, null, undefined, symbol, bigInt
+// reference type (non primitive) :  array, objects, functions
+
+//JavaScript is a dynamically typed language.
+
+const score = 100
+const scoreValue = 100.5
+
+const isloggedIn = false
+const outsideTemp = null
+const userEmail = undefined
+
+const id =Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId) // false
+
+const bigNumber = 9007199254740991n
+const anotherBigNumber = BigInt(9007199254740991)
+
+const heros = ["sharanyaa", "sneha", "sneha2"]
+let myObj = {
+    name: "sharanyaa",
+    age: 21,
+    isLoggedIn: false
+}
+const myFunc = function() {
+    console.log("hello world")
+}
+
+console.log(typeof myFunc);
