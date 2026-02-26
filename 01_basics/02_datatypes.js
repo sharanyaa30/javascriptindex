@@ -7,8 +7,8 @@
 // alert("hello")
 // alert(3+3) will not work in node it will stored in brousr
 
-console.log(3 + 3)
-console.log("sharanyaa")
+// console.log(3 + 3)
+// console.log("sharanyaa")
 
 //
 
@@ -28,8 +28,8 @@ let state;
 
 // object
 
-console.log(typeof null);
-console.log(typeof undefined);
+// console.log(typeof null);
+// console.log(typeof undefined);
 
 // summary***********************************
 
@@ -51,7 +51,7 @@ const userEmail = undefined
 const id =Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId) // false
+// console.log(id === anotherId) // false
 
 const bigNumber = 9007199254740991n
 const anotherBigNumber = BigInt(9007199254740991)
@@ -66,4 +66,29 @@ const myFunc = function() {
     console.log("hello world")
 }
 
-console.log(typeof myFunc);
+// console.log(typeof myFunc);
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive), Heap (non-primitive)
+
+let myName = "sharanyaa"
+let anotherName = myName
+anotherName = "sneha"
+
+console.log(anotherName);
+console.log(myName);
+
+let user = {
+    email : "sharanyaa@gmail.com",
+    upi : "sharanyaa@okaxis"
+}
+let anotherUser = user
+anotherUser.email = "sneha@gmail.com"
+console.log(user.email);
+console.log(anotherUser.email);
+
+
+
