@@ -67,7 +67,7 @@ function addone(value){
 }
 
 
-console.log(addtwo(5));
+// console.log(addtwo(5));
 
 
 const addtwo = function(value){
