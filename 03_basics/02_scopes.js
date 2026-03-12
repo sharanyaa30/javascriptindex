@@ -76,3 +76,4 @@ const addtwo = function(value){
 
 //hosting is the process of moving the declaration of functions, variables or classes to the top of their scope before code execution. In JavaScript, function declarations are hoisted, but function expressions and variable declarations using let and const are not hoisted.
 
+// In the above code, the function addone is hoisted, so we can call it before its declaration. However, the function expression addtwo is not hoisted, so we cannot call it before its declaration.
